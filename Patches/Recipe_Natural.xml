@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Patching the organ rejection thing OwO ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallNaturalHeart" or defName="InstallNaturalLiver" or defName="InstallNaturalKidney" or defName="InstallNaturalLung" or defName="InstallNaturalEye" or defName="InstallNaturalNose" or defName="InstallNaturalEar" or defName="InstallNaturalJaw" or defName="InstallNaturalArm" or defName="InstallNaturalLeg" or defName="InstallNaturalStomach"]/addsHediff</xpath>
+		<value>
+			<addsHediff>RejectionChance</addsHediff>
+		</value>
+	</Operation>
+
+</Patch>
